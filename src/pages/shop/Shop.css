@@ -3,17 +3,45 @@
     grid-template-columns: auto auto auto auto auto;
     justify-content: space-evenly;
     grid-row-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 👈 مثلا ۴ ستون ثابت */
+    gap: 1rem;
 }
 
 .filtered button {
     border: none;
     border-radius: 6px;
 }
-.activeModeFiltered{
+
+.activeModeFiltered {
     background-color: red;
     color: white;
 }
-.btn-categories-style{
+
+.btn-categories-style {
     text-decoration: none;
     margin: 0 1rem;
+}
+
+/* لپ‌تاپ و تبلت بزرگ */
+@media (max-width: 1200px) {
+    .shop-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* تبلت */
+@media (max-width: 768px) {
+    .shop-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* موبایل */
+@media (max-width: 576px) {
+    .shop-box {
+        grid-template-columns: 1fr;
+        /* یک ستون */
+    }
 }
