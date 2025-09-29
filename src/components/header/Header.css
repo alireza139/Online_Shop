@@ -1,0 +1,44 @@
+.head {
+    background-color: #9e8e7a;
+    border: 0.5rem #a39481 solid;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    height: 7rem;
+    z-index: 20;
+}
+
+.head-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.shopLogo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.custom-color-btn {
+    background-color: #695846 !important;
+    border: none !important;
+}
+
+.active-btn {
+    border-bottom: 2px solid #b7a996;
+}
+
+.bag-badg {
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: red;
+    font-size: .6rem;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: -2px;
+    right: -35%;
+}

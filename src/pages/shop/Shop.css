@@ -1,0 +1,19 @@
+.shop-box {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+    grid-row-gap: 2rem;
+}
+
+.filtered button {
+    border: none;
+    border-radius: 6px;
+}
+.activeModeFiltered{
+    background-color: red;
+    color: white;
+}
+.btn-categories-style{
+    text-decoration: none;
+    margin: 0 1rem;
+}

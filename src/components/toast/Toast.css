@@ -1,0 +1,7 @@
+.toast-box{
+    position: fixed;
+    top: 90%;
+    width: 25rem;
+    text-align: center;
+    left: 2.5rem;
+}

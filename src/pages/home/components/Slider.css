@@ -1,0 +1,9 @@
+.slider{
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+}
+.slider-item,.slider-image{
+    width: 100%;
+    height: 50vh;
+}
