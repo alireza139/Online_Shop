@@ -1,14 +1,11 @@
-.card-btn-details {
-    padding: 1rem 1.4rem 0.3rem 0.8rem;
-    margin-right: 0.5rem;
-
-}
-
-.card-btn-icon {
+.card-add-btn {
     color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
 }
 
-.card-btn {
+.card-btn-details {
     background: #9e8e7a;
     border: none;
     height: 3rem;
@@ -17,17 +14,62 @@
     text-decoration: none;
     text-align: center;
     padding-top: 0.2rem;
-    border: 1px solid black;
+    border: 1px solid rgba(143, 131, 131, 0.975);
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.3rem;
+    transition: all 0.5s;
 }
 
-.card-btn:hover {
-    background: #695846;
-    transition: 0.5s ease;
+.card-btn-details:hover {
+    background: white;
+    color: #9e8e7a;
+    transition: all 0.5s;
+}
+
+.card-add-btn:hover .add-icon {
+    /* حرکت به جلو */
+    transform: translateX(6px);
+    /* اجرای انیمیشن */
+    animation: shake 1s ease;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(6px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateX(8px) rotate(10deg);
+    }
+
+    50% {
+        transform: translateX(6px) rotate(0deg);
+    }
+
+    75% {
+        transform: translateX(8px) rotate(-10deg);
+    }
+
+    100% {
+        transform: translateX(6px) rotate(0deg);
+    }
 }
 
 .card-btn-box {
-    border: 1px solid black;
+    border: 1px solid rgba(143, 131, 131, 0.975);
     border-radius: 1rem;
     padding-right: 0.5rem;
     background: #afa89f;
+}
+
+
+.off-box {
+    background: red;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 2.5rem;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
 }
