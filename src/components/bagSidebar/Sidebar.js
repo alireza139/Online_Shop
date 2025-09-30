@@ -67,7 +67,7 @@ export default function Sidebar() {
                                     <th scope="col">name</th>
                                     <th scope="col">count</th>
                                     <th scope="col">price</th>
-                                    <th scope="col">Remove</th>
+                                    <th scope="col">Del</th>
 
                                 </tr>
                             </thead>

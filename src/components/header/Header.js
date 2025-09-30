@@ -16,6 +16,17 @@ export default function Header() {
         <Navbar expand="lg" className="head">
             <Container>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
+                <Navbar.Brand href="#home" className='d-lg-none'>
+                    <img src="shopLogo.jpg" alt="shopLogo" className='shopLogo' />
+                </Navbar.Brand>
+                <div className="bag-box position-relative">
+                    <NavLink
+                        className="head-link fw-1"
+                        onClick={() => contextData.setIsShowBagSidebar(true)}>
+                        <BsHandbag></BsHandbag>
+                    </NavLink>
+                    <p className='bag-badg'>{contextData.userBag.length}</p>
+                </div>
 
                 <Navbar.Offcanvas
                     id="offcanvasNavbar"
@@ -23,17 +34,9 @@ export default function Header() {
                     placement="end"
                 >
                     <Offcanvas.Header closeButton>
-                        <Offcanvas.Title id="offcanvasNavbarLabel">منو</Offcanvas.Title>
+                        <Offcanvas.Title id="offcanvasNavbarLabel">Meno</Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>
-                        <div className="bag-box position-relative">
-                            <NavLink
-                                className="head-link fw-1"
-                                onClick={() => contextData.setIsShowBagSidebar(true)}>
-                                <BsHandbag></BsHandbag>
-                            </NavLink>
-                            <p className='bag-badg'>{contextData.userBag.length}</p>
-                        </div>
                         <Nav className="m-auto">
                             <NavLink className={({ isActive }) => `head-link me-5 ${isActive ? 'active-btn' : ""}`} to="/">Home</NavLink>
                             <NavLink className={({ isActive }) => `head-link me-5 ${isActive ? 'active-btn' : ""}`} to="/shop">Shop</NavLink>
@@ -43,7 +46,8 @@ export default function Header() {
                         </Nav>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
-                <Navbar.Brand href="#home">
+
+                <Navbar.Brand href="#home" className='d-none d-lg-block'>
                     <img src="shopLogo.jpg" alt="shopLogo" className='shopLogo' />
                 </Navbar.Brand>
             </Container>

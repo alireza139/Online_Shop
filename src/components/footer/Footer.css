@@ -1,0 +1,130 @@
+.top-footer {
+    background: #a39481;
+}
+
+.footer-link {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: #444;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+    /* تغییر رنگ متن */
+    color: #ff5722;
+    /* کمی زوم بشه */
+    transform: scale(1.05);
+}
+
+.footer-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-link:hover .footer-icon {
+    color: #ff5722;
+    /* حرکت به جلو */
+    transform: translateX(6px);
+    /* اجرای انیمیشن */
+    animation: shake 0.4s ease;
+}
+
+
+/* 🔹 انیمیشن "تکون خوردن" */
+@keyframes shake {
+    0% {
+        transform: translateX(6px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateX(8px) rotate(10deg);
+    }
+
+    50% {
+        transform: translateX(6px) rotate(0deg);
+    }
+
+    75% {
+        transform: translateX(8px) rotate(-10deg);
+    }
+
+    100% {
+        transform: translateX(6px) rotate(0deg);
+    }
+}
+
+
+.middle-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.list-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-text {
+    text-align: justify;
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a39481;
+    width: 100%;
+    height: 2rem;
+}
+
+.icons-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons-box * {
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* تبلت */
+@media (max-width: 992px) {
+    .middle-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .list-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+
+    .footer-link {
+        justify-content: center;
+    }
+}
+
+/* موبایل */
+@media (max-width: 576px) {
+    .middle-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .list-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+
+    .footer-link {
+        justify-content: center;
+    }
+}

@@ -2,6 +2,7 @@
     width: 100%;
     height: 50vh;
     margin: 0 auto;
+    margin-top: 10rem !important;
 }
 .slider-item,.slider-image{
     width: 100%;

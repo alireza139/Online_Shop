@@ -1,6 +1,7 @@
 import { useRoutes } from 'react-router-dom';
 import './App.css';
 import Header from "./components/header/Header"
+import Footer from './components/footer/Footer';
 import routes from './Routes';
 import productList from './productsDATA';
 import Sidebar from './components/bagSidebar/Sidebar';
@@ -48,8 +49,8 @@ function App() {
       <Header></Header>
       <Sidebar></Sidebar>
       {router}
+      <Footer></Footer>
     </productsContext.Provider>
-
   )
 }
 
