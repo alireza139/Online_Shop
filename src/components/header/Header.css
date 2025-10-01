@@ -1,8 +1,8 @@
 .head {
     background-color: #9e8e7a;
     border: 0.5rem #a39481 solid;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     position: fixed !important;
     top: 0;
     width: 100%;

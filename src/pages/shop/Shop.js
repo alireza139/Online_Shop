@@ -45,7 +45,7 @@ export default function Shop() {
       ) : (
         <>
           {/* دکمه‌های فیلتر */}
-          <div className='filtered d-flex justify-content-center w-100' style={{ marginTop: "10rem" }}>
+          <div className='filtered d-flex justify-content-center mt-5'>
             {categories.map(category =>
               <button
                 key={category}

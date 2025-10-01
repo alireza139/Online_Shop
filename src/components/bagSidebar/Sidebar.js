@@ -12,7 +12,7 @@ export default function Sidebar() {
     const increaseCount = (id) => {
         contextData.setUserBag(prev =>
             prev.map(item =>
-                item.id === id ? { ...item, count: item.count + 1 } : item
+                item.id === id && item.count < 10 ? { ...item, count: item.count + 1 } : item
             )
         )
     }

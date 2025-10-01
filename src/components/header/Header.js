@@ -40,9 +40,9 @@ export default function Header() {
                         <Nav className="m-auto">
                             <NavLink className={({ isActive }) => `head-link me-5 ${isActive ? 'active-btn' : ""}`} to="/">Home</NavLink>
                             <NavLink className={({ isActive }) => `head-link me-5 ${isActive ? 'active-btn' : ""}`} to="/shop">Shop</NavLink>
-                            <NavLink className={({ isActive }) => `head-link me-5 ${isActive ? 'active-btn' : ""}`} to="/">About</NavLink>
-                            <NavLink className={({ isActive }) => `head-link me-5 ${isActive ? 'active-btn' : ""}`} to="/">Contact</NavLink>
-                            <NavLink className={({ isActive }) => `head-link me-5 ${isActive ? 'active-btn' : ""}`} to="/">Login</NavLink>
+                            <NavLink className={({ isActive }) => `head-link me-5 ${isActive ? 'active-btn' : ""}`} to="/about">About</NavLink>
+                            <NavLink className={({ isActive }) => `head-link me-5 ${isActive ? 'active-btn' : ""}`} to="/contact">Contact</NavLink>
+                            <NavLink className={({ isActive }) => `head-link me-5 ${isActive ? 'active-btn' : ""}`} to="/hamkari">hamkari</NavLink>
                         </Nav>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>

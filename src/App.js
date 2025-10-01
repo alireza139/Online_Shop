@@ -47,8 +47,11 @@ function App() {
       }
     }>
       <Header></Header>
+      
+      <div style={{paddingTop: "7rem"}}>
+        {router}
+      </div>
       <Sidebar></Sidebar>
-      {router}
       <Footer></Footer>
     </productsContext.Provider>
   )

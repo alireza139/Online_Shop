@@ -1,0 +1,19 @@
+.single-page {
+    height: calc(100vh - 78px);
+    background: rgba(163, 148, 129, 0.25);
+}
+
+.single-page-img {
+    border-radius: 50%;
+    height: 30rem;
+    width: 30rem;
+}
+
+.single-page-info {
+    width: 35rem;
+    text-align: justify;
+}
+
+.single-page-info span {
+    color: rgba(163, 148, 129, 0.9);
+}
