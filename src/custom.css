@@ -6,7 +6,8 @@
     --orange-c: #FAB12F;
     --orange-d: #FEF3E2;
     --orange-wh: #fff;
-    --orange-bg-light: rgb(255, 229, 211);
+    --orange-bg-light: rgb(255, 246, 239);
+    --gray: #e6e6e6;
 }
 
 body {

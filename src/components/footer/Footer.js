@@ -11,11 +11,7 @@ import { FaPinterest } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="top-footer d-flex justify-content-center">
-        <img src="banners\footer-image.png" alt="footer-image" />
-      </div>
-
+    <footer className='mt-5'>
       <Container>
         <div className="middle-footer mt-3">
           <div className="footer-box p-2">
@@ -116,14 +112,12 @@ export default function Footer() {
 
       <div className="bottom-footer">
         <div className="icons-box">
-          <FaTelegramPlane></FaTelegramPlane>
-          <FaPinterest></FaPinterest>
-          <RiInstagramFill></RiInstagramFill>
-          <IoLogoWhatsapp></IoLogoWhatsapp>
+          <div> <FaTelegramPlane className='bottom-footer-icon'></FaTelegramPlane></div>
+          <div>  <FaPinterest className='bottom-footer-icon'></FaPinterest></div>
+          <div> <RiInstagramFill className='bottom-footer-icon'></RiInstagramFill></div>
+          <div> <IoLogoWhatsapp className='bottom-footer-icon'></IoLogoWhatsapp></div>
         </div>
-
       </div>
-
     </footer>
   )
 }
