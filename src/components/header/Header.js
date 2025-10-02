@@ -5,6 +5,18 @@ import { Navbar, Nav, Container, Offcanvas, NavDropdown, Form, FormControl, Butt
 import { Link, NavLink } from 'react-router-dom';
 import { BsHandbag } from "react-icons/bs";
 import { FaRegUser } from "react-icons/fa6";
+import { IoMdSearch } from "react-icons/io";
+import { BsSearch } from "react-icons/bs";
+import { FcLike } from "react-icons/fc";
+
+
+import { IoSearchOutline } from "react-icons/io5";
+import { CiUser } from "react-icons/ci";
+import { IoBagOutline } from "react-icons/io5";
+import { BsBag } from "react-icons/bs";
+
+
+
 import productsContext from '../../context/ProductsContext';
 
 
@@ -13,20 +25,13 @@ export default function Header() {
     const contextData = useContext(productsContext)
 
     return (
-        <Navbar expand="lg" className="head">
-            <Container>
+        <>
+            <Navbar expand="lg" className="head">
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
-                <Navbar.Brand href="#home" className='d-lg-none'>
-                    <img src="shopLogo.jpg" alt="shopLogo" className='shopLogo' />
+                <Navbar.Brand href="#home" className='shopLogo d-lg-none'>
+                    <span className='my-brand fs-2'>My</span>
+                    <span className='stor-brand'>Store</span>
                 </Navbar.Brand>
-                <div className="bag-box position-relative">
-                    <NavLink
-                        className="head-link fw-1"
-                        onClick={() => contextData.setIsShowBagSidebar(true)}>
-                        <BsHandbag></BsHandbag>
-                    </NavLink>
-                    <p className='bag-badg'>{contextData.userBag.length}</p>
-                </div>
 
                 <Navbar.Offcanvas
                     id="offcanvasNavbar"
@@ -47,10 +52,37 @@ export default function Header() {
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
 
-                <Navbar.Brand href="#home" className='d-none d-lg-block'>
-                    <img src="shopLogo.jpg" alt="shopLogo" className='shopLogo' />
+                <Navbar.Brand href="#home" className='shopLogo d-none d-lg-flex fw-bold'>
+                    <span className='my-brand fs-3'>My</span>
+                    <span className='stor-brand'>Store</span>
                 </Navbar.Brand>
-            </Container>
-        </Navbar>
+            </Navbar>
+
+            <div className="bottom-header py-1">
+                <div className="header-icons-box ps-3">
+                    <div className="icon-box position-relative">
+                        <NavLink
+                            className="head-link fw-1"
+                            onClick={() => contextData.setIsShowBagSidebar(true)}>
+                            <BsHandbag className='header-icon'></BsHandbag>
+                        </NavLink>
+                        <p className='bag-badg'>{contextData.userBag.length}</p>
+                    </div>
+                    <div className="icon-box user-icon">
+                        <FaRegUser className='header-icon'></FaRegUser>
+                    </div>
+                    <div className="icon-box search-icon">
+                        <BsSearch className='header-icon mt-1'></BsSearch>
+                    </div>
+                    <div className="icon-box position-relative">
+                        <NavLink
+                            className="head-link">
+                            <FcLike className='header-icon'></FcLike>
+                        </NavLink>
+                        <p className='like-badg'>{contextData.userBag.length}</p>
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }

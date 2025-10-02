@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 
 :root {
-    --main-color: red;
-    --second-color: blue;
+    --orange-a: #DD0303;
+    --orange-b: #FA812F;
+    --orange-c: #FAB12F;
+    --orange-d: #FEF3E2;
+    --orange-wh: #fff;
+    --orange-bg-light: rgb(255, 229, 211);
 }
 
 body {
