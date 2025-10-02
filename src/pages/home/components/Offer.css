@@ -1,16 +1,12 @@
-.offer-box{
+.offer-box {
+    width: 100%;
     height: auto;
-    background: rgba(209, 187, 158 , .25);
     border-radius: 1rem;
-    border: 3px dashed rgba(68, 52, 32 , .1) ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.offer-head-seperate{
-    width: 40%;
-    height: 3px;
-    background: rgba(68, 52, 32 , .3);
-}
-.offer-head-text{
-    color: rgba(68, 52, 32 , .3);
+
+.offer-head-text {
+    color: var(--orange-b);
     width: 12rem;
     margin: 0;
     text-align: center;

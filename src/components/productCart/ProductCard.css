@@ -6,7 +6,7 @@
 }
 
 .card-btn-details {
-    background: #9e8e7a;
+    background: var(--orange-b);
     border: none;
     height: 3rem;
     border-radius: 1rem;
@@ -14,7 +14,7 @@
     text-decoration: none;
     text-align: center;
     padding-top: 0.2rem;
-    border: 1px solid rgba(143, 131, 131, 0.975);
+    border: 1px solid var(--orange-b);
     padding: 0.25rem 0.5rem;
     margin-right: 0.3rem;
     transition: all 0.5s;
@@ -22,7 +22,7 @@
 
 .card-btn-details:hover {
     background: white;
-    color: #9e8e7a;
+    color: var(--orange-b);
     transition: all 0.5s;
 }
 
@@ -56,15 +56,15 @@
 }
 
 .card-btn-box {
-    border: 1px solid rgba(143, 131, 131, 0.975);
+    border: 1px solid var(--orange-c);
     border-radius: 1rem;
     padding-right: 0.5rem;
-    background: #afa89f;
+    background: var(--orange-c);
 }
 
 
 .off-box {
-    background: red;
+    background: var(--orange-b);
     border-radius: 5px;
     font-weight: bold;
     width: 2.5rem;

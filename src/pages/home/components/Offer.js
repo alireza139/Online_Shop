@@ -41,9 +41,7 @@ export default function Offer() {
     <div className='offer-box mt-5 pb-5 px-4'>
       {/* هدینگ */}
       <div className="offer-head d-flex justify-content-evenly align-items-center py-4">
-        <div className='offer-head-seperate' />
         <h4 className='offer-head-text fs-4'>Special Sell</h4>
-        <div className='offer-head-seperate' />
       </div>
 
       {/* اسلایدر محصولات */}

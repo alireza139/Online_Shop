@@ -27,7 +27,7 @@ export default function FadeSlider() {
     };
 
     return (
-        <div className="py-3 mt-5" style={{background: "#FFCC02" , borderRadius: "1rem"}}>
+        <div className="parent-slider py-2 mt-5">
             <div className="custom-slider">
                 <Slider {...settings} className="slider">
                     {photos.map((photo, index) => (

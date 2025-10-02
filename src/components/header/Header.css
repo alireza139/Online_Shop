@@ -1,11 +1,17 @@
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
 .head {
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
     /* position: fixed !important;
     top: 0; */
     width: 100%;
-    height: 4.5rem;
+    height: 5.5rem;
     z-index: 20;
+    border: solid 8px var(--orange-b);
+    background: var(--orange-wh);
 }
 
 .head-link {
@@ -89,6 +95,7 @@
 /* bottom header styles*/
 .bottom-header {
     background: var(--orange-b);
+    border-bottom: 8px solid var(--orange-b);
 }
 
 .header-icons-box {

@@ -3,6 +3,7 @@ import ProductCard from '../../components/productCart/ProductCard'
 import Toast from '../../components/toast/Toast'
 import './Shop.css'
 import productsContext from '../../context/ProductsContext'
+import { Container } from 'react-bootstrap'
 
 export default function Shop() {
   const { productsList } = useContext(productsContext)
@@ -39,7 +40,7 @@ export default function Shop() {
   }
 
   return (
-    <>
+    <Container>
       {loading ? (
         <p className="text-center mt-4">Loading...</p>
       ) : (
@@ -100,6 +101,6 @@ export default function Shop() {
           </div>
         </>
       )}
-    </>
+    </Container>
   )
 }

@@ -25,11 +25,11 @@ export default function Header() {
     const contextData = useContext(productsContext)
 
     return (
-        <>
+        <header>
             <Navbar expand="lg" className="head">
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
-                <Navbar.Brand href="#home" className='shopLogo d-lg-none'>
-                    <span className='my-brand fs-2'>My</span>
+                <Navbar.Brand href="#home" className='shopLogo d-lg-none me-3'>
+                    <span className='my-brand fs-2'>Nareng</span>
                     <span className='stor-brand'>Store</span>
                 </Navbar.Brand>
 
@@ -52,8 +52,8 @@ export default function Header() {
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
 
-                <Navbar.Brand href="#home" className='shopLogo d-none d-lg-flex fw-bold'>
-                    <span className='my-brand fs-3'>My</span>
+                <Navbar.Brand href="#home" className='shopLogo d-none d-lg-flex fw-bold me-2'>
+                    <span className='my-brand fs-3'>Nareng</span>
                     <span className='stor-brand'>Store</span>
                 </Navbar.Brand>
             </Navbar>
@@ -83,6 +83,6 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-        </>
+        </header>
     )
 }
