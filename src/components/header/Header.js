@@ -30,7 +30,7 @@ export default function Header() {
                 <Navbar.Toggle aria-controls="offcanvasNavbar" />
                 <Navbar.Brand href="#home" className='shopLogo d-lg-none me-3'>
                     <span className='my-brand fs-2'>Nareng</span>
-                    <span className='stor-brand'>Store</span>
+                    <span className='stor-brand'>Stor</span>
                 </Navbar.Brand>
 
                 <Navbar.Offcanvas
@@ -54,7 +54,7 @@ export default function Header() {
 
                 <Navbar.Brand href="#home" className='shopLogo d-none d-lg-flex fw-bold me-2'>
                     <span className='my-brand fs-3'>Nareng</span>
-                    <span className='stor-brand'>Store</span>
+                    <span className='stor-brand'>Stor</span>
                 </Navbar.Brand>
             </Navbar>
 

@@ -1,0 +1,107 @@
+.seperator {
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+
+.seperator h2 {
+    width: 30%;
+    text-align: center;
+}
+
+.seperator hr {
+    width: 40%;
+}
+
+.whyUs-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.whyUs-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    border-radius: 8px;
+    text-align: center;
+    color: gray;
+}
+
+.whyUs-icon {
+    font-size: 6rem;
+}
+
+.orange-icon-card {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.orange-icon-card * {
+    font-size: 10rem;
+}
+
+/*animation*/
+.orange-icon-card {
+    text-align: center;
+    color: orange;
+
+    /* انیمیشن شناور */
+    animation: floatUpDown 4s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+        /* نقطه شروع */
+    }
+
+    50% {
+        transform: translateY(80px);
+        /* پایین بره */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* دوباره برگرده بالا */
+    }
+}
+
+
+
+
+
+
+
+/* تبلت */
+@media (max-width: 992px) {
+    .whyUs-box {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .whyUs-card{
+        width: 100%;
+    }
+
+    .orange-icon-card {
+        display: none;
+    }
+}
+
+/* موبایل */
+@media (max-width: 576px) {
+    .whyUs-box {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .whyUs-card{
+        width: 100%;
+    }
+    .orange-icon-card {
+        display: none;
+    }
+}

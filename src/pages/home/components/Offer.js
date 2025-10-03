@@ -38,22 +38,24 @@ export default function Offer() {
   }
 
   return (
-    <div className='offer-box mt-5 pb-5 px-4'>
-      {/* هدینگ */}
-      <div className="offer-head d-flex justify-content-evenly align-items-center py-4">
-        <h4 className='offer-head-text fs-4'>Special Sell</h4>
+    <>
+      <div className="seperator mt-5 mb-3">
+        <hr />
+        <h2>Special Sell</h2>
+        <hr />
       </div>
-
-      {/* اسلایدر محصولات */}
-      <Slider {...settings}>
-        {allProducts
-          .filter(product => product.off !== 0)
-          .map(product => (
-            <div key={product.id}>
-              <ProductCard {...product} />
-            </div>
-          ))}
-      </Slider>
-    </div>
+      <div className='offer-box pb-5 pt-3'>
+        {/* اسلایدر محصولات */}
+        <Slider {...settings}>
+          {allProducts
+            .filter(product => product.off !== 0)
+            .map(product => (
+              <div key={product.id}>
+                <ProductCard {...product} />
+              </div>
+            ))}
+        </Slider>
+      </div>
+    </>
   )
 }

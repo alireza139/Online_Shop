@@ -1,6 +1,6 @@
 .single-page {
     height: calc(100vh - 78px);
-    background: rgba(163, 148, 129, 0.25);
+    background: var(--orange-bg-light);
 }
 
 .single-page-img {

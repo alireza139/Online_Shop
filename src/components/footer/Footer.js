@@ -11,7 +11,7 @@ import { FaPinterest } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className='mt-5'>
+    <footer>
       <Container>
         <div className="middle-footer mt-3">
           <div className="footer-box p-2">

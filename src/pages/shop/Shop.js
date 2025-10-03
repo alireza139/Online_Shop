@@ -14,7 +14,7 @@ export default function Shop() {
   const [loading, setLoading] = useState(false)
   const [currentPage, setCurrentPage] = useState(1)
 
-  const pageSize = 5
+  const pageSize = 4
 
   // 1️⃣ اول فیلتر
   const filteredProducts = useMemo(() => {
@@ -59,7 +59,7 @@ export default function Shop() {
           </div>
 
           {/* محصولات */}
-          <div className='shop-box my-5'>
+          <div className='shop-box m-5'>
             {chosenPageItems.map(product => <ProductCard key={product.id} {...product} />)}
           </div>
           <Toast />
