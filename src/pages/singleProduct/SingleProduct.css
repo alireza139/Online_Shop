@@ -1,6 +1,8 @@
 .single-page {
-    height: calc(100vh - 78px);
     background: var(--orange-bg-light);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: center;
 }
 
 .single-page-img {
@@ -11,9 +13,52 @@
 
 .single-page-info {
     width: 35rem;
+    padding: 0.5rem;
     text-align: justify;
 }
 
 .single-page-info span {
     color: rgba(163, 148, 129, 0.9);
+}
+.single-page-img-sm{
+    display: none;
+    width: 15rem;
+    height: 15rem;
+}
+
+
+/* تبلت */
+@media (max-width: 992px) {
+    .single-page {
+        grid-template-columns: 1fr;
+    }
+
+    .single-page-info {
+        width: 100%;
+    }
+
+    .single-page-img-sm {
+        display: block;
+    }
+    .single-page-img-lg{
+        display: none;
+    }
+}
+
+/* موبایل */
+@media (max-width: 576px) {
+    .single-page {
+        grid-template-columns: 1fr;
+    }
+
+    .single-page-info {
+        width: 100%;
+    }
+
+    .single-page-img-sm {
+        display: block;
+    }
+    .single-page-img-lg{
+        display: none;
+    }
 }

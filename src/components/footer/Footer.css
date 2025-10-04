@@ -122,6 +122,9 @@ footer {
     .footer-link {
         justify-content: center;
     }
+    .icons-box {
+        width: 40%;
+    }
 }
 
 /* موبایل */
@@ -140,5 +143,8 @@ footer {
 
     .footer-link {
         justify-content: center;
+    }
+    .icons-box {
+        width: 50%;
     }
 }
